@@ -1,0 +1,36 @@
+#banner { /* Respecto a la imagen de fondo */
+    margin-top: 50px;
+    position: relative;
+    height: 500px;
+}
+
+#banner img { /* Adapta el tamaño de la imagen al tamaño de la ventana */
+    width: 100%; /* Ancho de ventana */
+    height: 100%; /* Alto de ventana */
+}
+
+#banner .contenedor { /* Respecto al texto de la imagen */
+    position: absolute; /* El texto estara por encima de la imagen */
+    top: 50%; /* Contenedor de texto a 50% del limite superior */
+    left: 50%; /* Contenedor de texto a 50% del limite izquierdo */
+    transform: translateX(-50%) translateY(-50%); /* Ubica el contenedor de texto en el medio de la imagen */
+    color: #fff; /* Color de fuente */
+}
+
+#banner h2 {
+    font-size: 28px; /* Tamaño de fuente */
+}
+
+#banner a {
+    display: block; 
+    width: 100px; /* Ancho de boton 100px */
+    color: #fff; /* Color de fuente */
+    text-decoration: none; /* Elimina la linea del texto */
+    padding: 7px; /* Borde interno */
+    margin-top: 10px; /* Separacion con el margen superior */ 
+    border: 3px solid #fff; /* Dibuja el perimetro del boton con ancho y color*/
+}
+
+#banner a:hover {
+    background: rgba(51, 51, 51, 0.5); /* Pinta el boton cuando se posiciona el cursor */
+}

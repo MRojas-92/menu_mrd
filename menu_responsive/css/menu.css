@@ -1,0 +1,40 @@
+#menu-bar {
+    display: none;
+}
+
+header label {
+    float: right; /* Icono de menu flota a la derecha */
+    font-size: 28px; /* Tamaño de letra */
+    margin: 6px 0; /* Margen superior y derecho*/
+    cursor: pointer; /* El cursor cambia a una manita */
+}
+
+.menu {
+    /*display: none; /* Desaparece el menu */
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 25%;
+    height: 100vh; /* Ocupa el alto completo de la ventana */
+    background: rgba(51, 51, 51, 0.9); /* Color de fondo */
+    transition: all 0.5s; /* Transicion en 0.5 seg*/
+    transform: translateX(-100%); /* Menu se traslada en x menos 100% (desaparece)*/
+}
+
+.menu a {
+    display: block; /* Alinea los botones en vertical */
+    color: #fff; /* Color de fuente */
+    height: 50px; /* Alto de boton */
+    text-decoration: none; /* Elimina la linea del texto */
+    padding: 15px; /* Distancia del texto con el borde izquierdo */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* Pinta el borde del boton */
+}
+
+.menu a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#menu-bar:checked ~ .menu { /* Al presionar icono de Menu bar el menu aparece o desaparece*/
+    transform: translateX(0%); /* Menu aparece en pantalla */
+}
+

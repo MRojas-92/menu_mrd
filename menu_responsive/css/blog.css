@@ -1,0 +1,18 @@
+#blog h3, h4 {
+    text-align: center; /* Alinea el texto de a cuerdo a la imagen */
+}
+
+#blog .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Si los elementos no caben arriba los desplaza hacia abajo */
+}
+
+#blog article {
+    margin: 15px;
+}
+
+#blog img {
+    width: 100%; /* Toma el 100% del ancho disponible */
+    max-width: 280px; /* Establece el tamaño de la imagen */
+}
